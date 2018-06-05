@@ -50,6 +50,7 @@ public class TaskTwo {
     }
 
     private static WebDriver initChromeDriver() {
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/webdriver/chromedriver.exe" );
         return new ChromeDriver();
     }
 }
